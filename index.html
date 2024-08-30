@@ -1,12 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <title>Rinterio</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "manrope";
+      }
+    </style>
+    <title>Rinterio</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-col justify-between items-center mx-auto bg-gradient-to-t from-[hsl(0,0%,100%)] to-transparent mb-7"
+    >
+      <!-- navbar -->
+      <nav
+        class="hidden w-[80%] sm:flex justify-between items-center py-4 mx-auto mb-2"
+      >
+        <!-- nav logo and title -->
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 25 25"
+            stroke-width="2"
+            stroke="black"
+            class="size-7 inline bg-[hsl(88,82%,65%)] rounded-full text-black p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+          <h1 class="font-bold text-3xl">Rinterio</h1>
+        </div>
+        <!-- nav menu -->
+        <!-- menu elements -->
+        <div class="flex gap-8">
+          <a href="#" class="text-[hsl(0,0%,0%)] text-lg">Home</a>
+          <a href="#" class="text-[hsl(0,0%,45%)] text-lg">Services</a>
+          <a href="#" class="text-[hsl(0,0%,45%)] text-lg">Portfolio</a>
+          <a href="#" class="text-[hsl(0,0%,45%)] text-lg">Blog</a>
+          <a href="#" class="text-[hsl(0,0%,45%)] text-lg">Contact Us</a>
+        </div>
+        <!-- buttons -->
+        <div class="flex gap-1">
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </nav>
+
+      <!-- mobile navbar -->
+      <nav
+        class="sm:hidden w-[90%] mx-auto flex justify-between items-center py-2"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 25 25"
+            stroke-width="2"
+            stroke="black"
+            class="size-7 inline bg-[hsl(88,82%,65%)] rounded-full text-black p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+          <h1 class="font-bold text-3xl">Rinterio</h1>
+        </div>
+        <div class="max-w-12 flex justify-between items-center">
+          <a href="#" class="bg-white rounded-full p-2">
+            <img src="./assets/menu_icon.png" alt="" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <section
+        class="w-[90%] sm:w-[80%] flex flex-col items-center justify-between text-center mb-2"
+      >
+        <div class="px-5 sm:px-8">
+          <img class="w-full" src="./assets/banner.png" alt="" />
+        </div>
+        <h1 class="px-1 font-extrabold text-4xl sm:text-6xl mb-4">
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="w-[90%] sm:w-[80%] mb-4">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+        <a
+          href="#"
+          class="w-full sm:w-auto rounded-[2rem] border-none bg-[hsl(88,82%,65%)]/[0.5] text-lg font-bold inline-flex justify-center items-center px-6 py-3 gap-2"
+        >
+          View Details
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 25 25"
+            stroke-width="2"
+            stroke="black"
+            class="size-7 inline bg-[hsl(88,82%,65%)] rounded-full text-black p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </a>
+      </section>
+    </header>
+    <main>
+      <!-- design thoughtful section -->
+      <section class="w-full bg-[hsl(0,0%,96%)] py-10">
+        <div
+          class="w-[90%] sm:w-[80%] flex flex-col sm:flex-row justify-center items-end mx-auto gap-10"
+        >
+          <div
+            class="flex flex-col items-center sm:items-start gap-4 w-full sm:w-[50%]"
+          >
+            <a
+              href="#"
+              class="w-[180px] rounded-[2rem] border-none bg-white text-sm sm:text-lg font-bold inline-flex justify-center items-center px-2 py-1 gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 25 25"
+                stroke-width="2"
+                stroke="black"
+                class="size-7 inline p-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              About Us
+            </a>
+            <h1
+              class="px-1 font-bold text-3xl sm:text-5xl mb-4 text-center sm:text-left"
+            >
+              We design thoughtful, liveable spaces
+            </h1>
+            <p class="mb-4 text-center sm:text-left">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div
+              class="bg-white rounded-2xl flex justify-between items-center p-6 gap-4"
+            >
+              <img src="./assets/commercial.png" alt="" />
+              <div class="flex flex-col">
+                <h2 class="font-bold">Commercial</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl flex justify-between items-center p-6 gap-4"
+            >
+              <img src="./assets/residential.png" alt="" />
+              <div class="flex flex-col">
+                <h2 class="font-bold">Residential</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full sm:w-[50%]">
+            <img class="w-full" src="./assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- how we work section -->
+      <section class="w-full bg-[hsl(0,0%,96%)] py-10">
+        <!-- content -->
+        <div
+          class="w-[90%] sm:w-[80%] flex flex-col justify-center items-center mx-auto"
+        >
+          <div
+            class="w-full flex flex-col justify-center items-center mx-auto gap-2"
+          >
+            <a
+              href="#"
+              class="w-[220px] rounded-[2rem] border-none bg-white text-sm sm:text-lg font-bold inline-flex justify-center items-center px-2 py-1 gap-2 mb-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 25 25"
+                stroke-width="2"
+                stroke="black"
+                class="size-7 inline p-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              How We Work
+            </a>
+            <h1 class="px-1 font-bold text-3xl sm:text-5xl mb-4 text-center">
+              Our Work Process
+            </h1>
+            <p class="mb-4 text-center">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- cards -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center gap-3"
+          >
+            <div
+              class="flex flex-col justify-between items-start bg-[#E7C1D3] rounded-2xl p-6 gap-1"
+            >
+              <img src="./assets/concept.png" alt="" />
+              <h2 class="font-bold">Concept</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start bg-[#EFDA6E] rounded-2xl p-6 gap-1"
+            >
+              <img src="./assets/flow-chart.png" alt="" />
+              <h2 class="font-bold">Design Process</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start bg-[#A4DAC3] rounded-2xl p-6 gap-1"
+            >
+              <img src="./assets/vision.png" alt="" />
+              <h2 class="font-bold">Supervision</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-between items-start bg-[#77AAEA] rounded-2xl p-6 gap-1"
+            >
+              <img src="./assets/budget-planning.png" alt="" />
+              <h2 class="font-bold">Budget Planning</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer></footer>
+  </body>
 </html>
